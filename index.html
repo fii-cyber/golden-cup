@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Cup Coffee House</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#" onclick="showPage('home')">
+            ☕ Golden Cup
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button class="nav-link active" onclick="showPage('home')">Home</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="showPage('about')">About</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="showPage('gallery')">Gallery</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="showPage('news')">News</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" onclick="showPage('contact')">Contact</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HOME PAGE -->
+<section id="home" class="page active">
+    <div class="hero">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO GOLDEN CUP</p>
+            <h1>Every Cup Tells a Story</h1>
+            <p>Freshly brewed coffee, warm moments, and unforgettable experiences.</p>
+            <button class="btn btn-coffee" onclick="showPage('about')">
+                Discover More
+            </button>
+        </div>
+    </div>
+
+    <div class="container text-center section-padding">
+        <h2 class="section-title">A Little Taste of Happiness</h2>
+        <p class="section-description">
+            Enjoy the perfect blend of rich coffee, delicious treats,
+            and a relaxing atmosphere.
+        </p>
+        <button class="btn btn-outline-coffee" onclick="showPage('gallery')">
+            Explore Our Gallery
+        </button>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Golden Cup Coffee House. All Rights Reserved.</p>
+    </footer>
+</section>
+
+<!-- ABOUT PAGE -->
+<section id="about" class="page">
+    <div class="page-banner">
+        <h1>About Us</h1>
+        <p>Get to know our coffee house</p>
+    </div>
+
+    <div class="container section-padding">
+        <div class="row align-items-center g-5">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=900"
+                    class="img-fluid rounded shadow" alt="Coffee house interior">
+            </div>
+
+            <div class="col-md-6">
+                <h2 class="section-title text-start">Our Story</h2>
+                <p>
+                    Golden Cup Coffee House was created from a love of coffee
+                    and a passion for bringing people together.
+                </p>
+                <p>
+                    We believe that coffee is more than just a drink.
+                    It is a moment to relax, connect with friends,
+                    and enjoy the little things in life.
+                </p>
+                <p>
+                    Our goal is to provide freshly prepared coffee,
+                    friendly service, and a welcoming environment
+                    for everyone.
+                </p>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5 g-4">
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h3>Quality</h3>
+                    <p>We care about every cup we serve.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h3>Comfort</h3>
+                    <p>A peaceful place to relax and enjoy.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="info-card">
+                    <h3>Community</h3>
+                    <p>Bringing people together through coffee.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Golden Cup Coffee House. All Rights Reserved.</p>
+    </footer>
+</section>
+
+<!-- GALLERY PAGE -->
+<section id="gallery" class="page">
+    <div class="page-banner">
+        <h1>Our Gallery</h1>
+        <p>A look inside our coffee world</p>
+    </div>
+
+    <div class="container section-padding">
+        <h2 class="section-title">Coffee Moments</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <img class="gallery-img"
+                    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800"
+                    alt="A cup of coffee">
+            </div>
+
+            <div class="col-md-4">
+                <img class="gallery-img"
+                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800"
+                    alt="Coffee being prepared">
+            </div>
+
+            <div class="col-md-4">
+                <img class="gallery-img"
+                    src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800"
+                    alt="Coffee and coffee beans">
+            </div>
+
+            <div class="col-md-4">
+                <img class="gallery-img"
+                    src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800"
+                    alt="Freshly brewed coffee">
+            </div>
+
+            <div class="col-md-4">
+                <img class="gallery-img"
+                    src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800"
+                    alt="Coffee shop">
+            </div>
+
+            <div class="col-md-4">
+                <img class="gallery-img"
+                    src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800"
+                    alt="Coffee house atmosphere">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Golden Cup Coffee House. All Rights Reserved.</p>
+    </footer>
+</section>
+
+<!-- NEWS PAGE -->
+<section id="news" class="page">
+    <div class="page-banner">
+        <h1>Latest News</h1>
+        <p>What's happening at Golden Cup?</p>
+    </div>
+
+    <div class="container section-padding">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800"
+                        alt="Coffee">
+                    <div class="news-content">
+                        <small>November 2026</small>
+                        <h4>Our New Coffee Menu</h4>
+                        <p>Discover new flavors and delicious drinks at Golden Cup.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800"
+                        alt="Coffee shop interior">
+                    <div class="news-content">
+                        <small>November 2026</small>
+                        <h4>A Cozy New Space</h4>
+                        <p>Come and enjoy our comfortable and welcoming atmosphere.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800"
+                        alt="Coffee shop">
+                    <div class="news-content">
+                        <small>November 2026</small>
+                        <h4>Special Coffee Moments</h4>
+                        <p>Share your favorite coffee moments with us.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Golden Cup Coffee House. All Rights Reserved.</p>
+    </footer>
+</section>
+
+<!-- CONTACT PAGE -->
+<section id="contact" class="page">
+    <div class="page-banner">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you</p>
+    </div>
+
+    <div class="container section-padding">
+        <div class="row g-5">
+
+            <div class="col-md-5">
+                <h2 class="section-title text-start">Get In Touch</h2>
+                <p><strong>Address:</strong> Addis Ababa, Ethiopia</p>
+                <p><strong>Email:</strong> info@goldencup.com</p>
+                <p><strong>Phone:</strong> +251 900 000 000</p>
+                <p><strong>Opening Hours:</strong> Monday – Sunday, 8 AM – 9 PM</p>
+            </div>
+
+            <div class="col-md-7">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label class="form-label">Your Name</label>
+                        <input type="text" class="form-control"
+                            placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Your Email</label>
+                        <input type="email" class="form-control"
+                            placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-control"
+                            placeholder="Enter subject" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5"
+                            placeholder="Write your message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-coffee">
+                        Send Message
+                    </button>
+
+                    <p id="formMessage" class="mt-3"></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Golden Cup Coffee House. All Rights Reserved.</p>
+    </footer>
+</section>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
